@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="10" time="75.298887">
+    <testcase classname="Verify Login on Madison Store" name="Successful login with valid entries" time="17.406917">
+        <system-out><![CDATA[Given user navigates to the madison website "http://demo-store.seleniumacademy.com/customer/account/login/".passed
+When userlogins using username as "lruizabcde@gmail.com"....................passed
+And user enters password as "lima1234"......................................passed
+Then login must be successful...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Verify Login on Madison Store" name="Successful login with valid entries 2" time="12.132767">
+        <failure message="java.lang.AssertionError: Message: not found expected [My Account] but found [Customer Login]&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:1037)&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:140)&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:122)&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:629)&#10;&#9;at com.ecommerce.steps.account.Login.login_must_be_successful(Login.java:50)&#10;&#9;at ✽.Then login must be successful(account/login.feature:9)&#10;"><![CDATA[Given user navigates to the madison website "http://demo-store.seleniumacademy.com/customer/account/login/".passed
+When userlogins using username as "lruizabcde@gmail.com"....................passed
+And user enters password as "lima12342".....................................passed
+Then login must be successful...............................................failed
+
+StackTrace:
+java.lang.AssertionError: Message: not found expected [My Account] but found [Customer Login]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at com.ecommerce.steps.account.Login.login_must_be_successful(Login.java:50)
+	at ✽.Then login must be successful(account/login.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="Create New Account on Madison Store" name="User successfully create new Account on Maddison Store" time="9.778857">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;top&quot;]/body/div/div[2]/div[2]/div/div[2]/div[2]/div/ul/li/ul/li/span&quot;}&#10;  (Session info: headless chrome=92.0.4515.107)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'&#10;System info: host: 'Luiss-MacBook-Air.local', ip: 'fe80:0:0:0:cf6:df5f:1059:1582%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [10c74f93a2156e99cd00b60e69165645, findElement {using=xpath, value=//*[@id=&quot;top&quot;]/body/div/div[2]/div[2]/div/div[2]/div[2]/div/ul/li/ul/li/span}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/1n/fmlp82gj2b5...}, goog:chromeOptions: {debuggerAddress: localhost:51290}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51290/devtoo..., se:cdpVersion: 92.0.4515.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 10c74f93a2156e99cd00b60e69165645&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at com.ecommerce.steps.account.Register.a_store_account_is_created(Register.java:50)&#10;&#9;at ✽.Then a store account is created(account/register.feature:9)&#10;"><![CDATA[Given User is on the Store Registration page................................passed
+When User enters all required registration fields...........................passed
+And User clicks in register button..........................................passed
+Then a store account is created.............................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="top"]/body/div/div[2]/div[2]/div/div[2]/div[2]/div/ul/li/ul/li/span"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'Luiss-MacBook-Air.local', ip: 'fe80:0:0:0:cf6:df5f:1059:1582%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [10c74f93a2156e99cd00b60e69165645, findElement {using=xpath, value=//*[@id="top"]/body/div/div[2]/div[2]/div/div[2]/div[2]/div/ul/li/ul/li/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/1n/fmlp82gj2b5...}, goog:chromeOptions: {debuggerAddress: localhost:51290}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51290/devtoo..., se:cdpVersion: 92.0.4515.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10c74f93a2156e99cd00b60e69165645
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at com.ecommerce.steps.account.Register.a_store_account_is_created(Register.java:50)
+	at ✽.Then a store account is created(account/register.feature:9)
+]]></failure>
+    </testcase>
+    <testcase classname="Validate Accounts on Madison Store" name="Password validation" time="1.920342">
+        <system-out><![CDATA[Given I try to create an account with password "abc"........................passed
+Then I should see that the password is "invalid"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Accounts on Madison Store" name="Password validation 2" time="1.887493">
+        <system-out><![CDATA[Given I try to create an account with password "ab1"........................passed
+Then I should see that the password is "invalid"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Accounts on Madison Store" name="Password validation 3" time="1.855223">
+        <system-out><![CDATA[Given I try to create an account with password "abc1".......................passed
+Then I should see that the password is "valid"..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Accounts on Madison Store" name="Password validation 4" time="1.963273">
+        <system-out><![CDATA[Given I try to create an account with password "abcd".......................passed
+Then I should see that the password is "invalid"............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Validate Accounts on Madison Store" name="Password validation 5" time="1.846927">
+        <system-out><![CDATA[Given I try to create an account with password "abcd1"......................passed
+Then I should see that the password is "valid"..............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Shopping Cart on Madison Store" name="Cart - Adding a product to basket" time="13.879811">
+        <system-out><![CDATA[Given I am on a product detail page "http://demo-store.seleniumacademy.com/chelsea-tee-703.html".passed
+When I select the size/colour/quantity......................................passed
+And I click the add to basket button........................................passed
+Then the product is added to my shopping basket.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Shopping Cart on Madison Store" name="Cart - Opening the shopping basket" time="12.627277">
+        <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class='skip-link skip-cart ']&quot;}&#10;  (Session info: headless chrome=92.0.4515.107)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'&#10;System info: host: 'Luiss-MacBook-Air.local', ip: 'fe80:0:0:0:cf6:df5f:1059:1582%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [9732e3801b659847999e089ab03aaa21, findElement {using=xpath, value=//a[@class='skip-link skip-cart ']}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/1n/fmlp82gj2b5...}, goog:chromeOptions: {debuggerAddress: localhost:51489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51489/devtoo..., se:cdpVersion: 92.0.4515.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 9732e3801b659847999e089ab03aaa21&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)&#10;&#9;at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)&#10;&#9;at com.ecommerce.steps.shopping.Shopping.i_click_the_shopping_bag_icon(Shopping.java:62)&#10;&#9;at ✽.When I click the shopping cart icon(shopping/cart.feature:13)&#10;"><![CDATA[Given I have added an item to my shopping bag...............................passed
+When I am on a home page "http://demo-store.seleniumacademy.com/"...........passed
+When I click the shopping cart icon.........................................failed
+Then I land on the shopping cart page.......................................skipped
+And I can see the product in my shopping cart...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='skip-link skip-cart ']"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-4', revision: '29f46d02dd'
+System info: host: 'Luiss-MacBook-Air.local', ip: 'fe80:0:0:0:cf6:df5f:1059:1582%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9732e3801b659847999e089ab03aaa21, findElement {using=xpath, value=//a[@class='skip-link skip-cart ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/1n/fmlp82gj2b5...}, goog:chromeOptions: {debuggerAddress: localhost:51489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51489/devtoo..., se:cdpVersion: 92.0.4515.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9732e3801b659847999e089ab03aaa21
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)
+	at com.ecommerce.steps.shopping.Shopping.i_click_the_shopping_bag_icon(Shopping.java:62)
+	at ✽.When I click the shopping cart icon(shopping/cart.feature:13)
+]]></failure>
+    </testcase>
+</testsuite>
