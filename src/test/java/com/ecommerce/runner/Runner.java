@@ -11,9 +11,9 @@ import io.cucumber.junit.CucumberOptions;
 		 glue = "com.ecommerce.steps", 
 		 plugin = {"pretty",
 			   "summary",
-			   "html:test-output/html-report.html",
-			   "json:test-output/cucumber.json",
-			   "junit:test-output/cucumber.xml",
+			   "json:target/cucumber.json",
+			   "junit:target/cucumber.xml",
+			   "html:target/cucumber",
 			  }, 
 		 dryRun = false, 
 		 monochrome = true)
